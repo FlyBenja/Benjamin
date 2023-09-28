@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>	
+
+<head>
 	<meta charset="UTF-8">
 	<title>Pagina De Benjamin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./Principal/styles_Pag.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-	<div class="ancho">
-		<div class="logo">
-			<p><a href="index.html">Inicio De Pagina</a></p>
+	<header>
+		<div class="ancho">
+			<div class="logo">
+				<p><a href="index.html">Inicio De Pagina</a></p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="file:///C:/Users/aldan/OneDrive/Escritorio/Pagina/Login/Login.html">Login</a></li>
+					<li><a href="file:///C:/Users/aldan/OneDrive/Escritorio/Pagina/Registro/Registro.html">Register</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="file:///C:/Users/aldan/OneDrive/Escritorio/Pagina/Login/Login.html">Login</a></li>
-				<li><a href="file:///C:/Users/aldan/OneDrive/Escritorio/Pagina/Registro/Registro.html">Register</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+	</header>
+
+	<div class="container">
+	<h1 class="ml3">hola bienvenidos a la pagina de Josue Benjamin Aldana Ramos</h1>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script>
+		var textWrapper = document.querySelector('.ml3');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({ loop: true })
+			.add({
+				targets: '.ml3 .letter',
+				opacity: [0, 1],
+				easing: "easeInOutQuad",
+				duration: 500,
+				delay: (el, i) => 150 * (i + 1)
+			}).add({
+				targets: '.ml3',
+				opacity: 0,
+				duration: 1000,
+				easing: "easeOutExpo",
+				delay: 1000
+			});
+	</script>
 </body>
-</html>
+</ht	
