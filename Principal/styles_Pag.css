@@ -33,6 +33,20 @@ header{
 	padding-top: 10px;
 	box-sizing: border-box;
 }
+@media (max-width: 768px) {
+	/* Aquí puedes definir los estilos que deseas aplicar a pantallas más pequeñas */
+	.logo {
+	  font-size: 16px;
+	}
+	/* Agregar más estilos según sea necesario */
+  }
+@media (max-width: 769px) {
+	/* Aquí puedes definir los estilos que deseas aplicar a pantallas más pequeñas */
+	.logo {
+	  font-size: 18px;
+	}
+	/* Agregar más estilos según sea necesario */
+  }
 .logo p a{
 	color: #fff;
 	font-size: 40px;
